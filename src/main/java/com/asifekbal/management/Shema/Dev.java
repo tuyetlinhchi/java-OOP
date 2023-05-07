@@ -18,10 +18,6 @@ import javax.persistence.*;
 @DiscriminatorValue("DEV")
 public class Dev extends Employee {
 
-//    ArrayList<String> techStack = new ArrayList<String>();
-//    public ArrayList<String> getTechStack() {
-//        return techStack;
-//    }
     private String techStack;
     public String getTechStack() {
         return techStack;

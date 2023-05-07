@@ -12,14 +12,16 @@ import com.asifekbal.management.Shema.Employee;
 @Service
 public class EmployeeServiceImplement implements EmployeeServices {
 
-    @Autowired private EmployeeRepository empRepo;
+    @Autowired private EmployeeRepository employeeRepo;
 
 
     @Override
     public List<Employee> getEmployee()
     {
-        return empRepo.findAll();
+        return employeeRepo.findAll();
     }
-
+    public void deleteEmployeeById(long Id) {
+        this.employeeRepo.deleteById(Id);
+    }
 
 }

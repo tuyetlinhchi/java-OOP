@@ -71,7 +71,7 @@
         <td sec:authorize="hasAuthority('ROLE_ADMIN')" >
           <a th:href="@{/updateManager/{id}(id=${employee.id})}"
              class="btn btn-info">Update</a>
-          <a th:href="@{/delete/{id}(id=${employee.id})}"
+          <a th:href="@{/deleteManager/{id}(id=${employee.id})}"
              class="btn btn-danger w-30 ">Delete</a>
         </td>
       </tr>
@@ -81,15 +81,6 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.25/datatables.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $("#employeeTable").DataTable({
-        'aoColumnDefs': [{
-            'bSortable': false,
-            'aTargets': [-1] /* 1st one, start by the right */
-        }]
-    });
-  })
-</script>
+
 </body>
 </html>

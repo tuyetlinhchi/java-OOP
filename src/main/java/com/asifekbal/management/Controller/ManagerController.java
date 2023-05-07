@@ -46,7 +46,7 @@ public class ManagerController {
     @GetMapping("/deleteManager/{Id}")
     public String deleteDevById(@PathVariable(value = "Id")long Id) {
         this.managerServiceImplement.deleteManagerById(Id);
-        return "redirect:/";
+        return "redirect:/getManager";
     }
 
 }

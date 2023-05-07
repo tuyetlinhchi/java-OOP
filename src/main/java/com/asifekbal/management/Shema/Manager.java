@@ -19,9 +19,6 @@ import java.util.ArrayList;
 @DiscriminatorValue("Manager")
 public class Manager extends Employee {
 
-//    ArrayList<String> project = new ArrayList<String>();
-//    public ArrayList<String> getProject() {
-//        return project;
-//    }
     private String project;
+
 }
